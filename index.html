@@ -9,6 +9,7 @@
 </head>
 <body>
     <div class="container ">
+        <div class="side-icon" title="Previous"><i class="fa-solid fa-angle-left" id="prev"></i></div>
         <div class="music-player">
             <div class="nav">
                 <div class="circle">
@@ -18,20 +19,21 @@
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
-            <img src="media/let her go.jpeg" alt="image loading" class="song-img">
-            <h1>Let Her Go (Passenger)</h1>
+            <img src="media/Let Her Go.jpeg" alt="image loading" class="song-img">
+            <h1 id="artist">Let Her Go (Passenger)</h1>
 
             <audio id="song">
-                <source src="media/Let Her Go - Passenger 320(PagalWorld).mp3">
+                <source src="media/Let Her Go.mp3">
             </audio>
             <input type="range" value="0" id="progress">
 
             <div class="controls">
-                <div onclick="backward()"><i class="fa-solid fa-backward" id="back"></i></div>
-                <div  onclick="playPause()"><i class="fa-solid fa-play" id="icon"></i></div>
-                <div onclick="forward()"><i class="fa-solid fa-forward" id="for"></i></div>
+                <div onclick="backward()" title="10 sec Back"><i class="fa-solid fa-backward" id="back" ></i></div>
+                <div  onclick="playPause()" title="Play"><i class="fa-solid fa-play" id="icon"></i></div>
+                <div onclick="forward()" title="10 sec Forward"><i class="fa-solid fa-forward" id="for"></i></div>
             </div>
         </div>
+        <div class="side-icon" title="Next"><i class="fa-solid fa-angle-right" id="next"></i></div>
     </div>
 
 
